@@ -15,7 +15,11 @@
 </head>
 <body ng-controller="MainCtrl">
 	<div class="container">
-		<h1>Hello {{world}}!</h1>	
+		<h1>Hello {{world}}!</h1>
+
+		<!-- binding to the same variable. Point is that the DOM isn't the only source for the variable.-->
+		<!-- Creates an input box that saves to the world variable. -->
+		<input ng-model="world"> 	
 	</div>
 </body>
 </html>
